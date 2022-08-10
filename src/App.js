@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const loadTransactions = async () => {
-      await sleep(3000);
+      await sleep(1000);
       const data = await fetchAPI("MOCK_DATA.json");
       setTransactions(data);
     };
