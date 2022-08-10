@@ -23,3 +23,15 @@ test("2022-10-01, 2022-11-01", () => {
     isDateWithinMonth(new Date("2022-10-01"), new Date("2022-11-01"))
   ).toBeFalsy();
 });
+
+test("2022-09-01, 2022-09-30", () => {
+  expect(
+    isDateWithinMonth(new Date("2022-09-01"), new Date("2022-09-30"))
+  ).toBeTruthy();
+});
+
+test("2022-09-01, 2022-10-01", () => {
+  expect(
+    isDateWithinMonth(new Date("2022-09-01"), new Date("2022-10-01"))
+  ).toBeFalsy();
+});
